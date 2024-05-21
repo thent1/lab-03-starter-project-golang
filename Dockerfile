@@ -14,7 +14,7 @@ COPY main.go .
 
 RUN go build -o ./fizzbuzz
 
-FROM scratch
+FROM gcr.io/distroless/base-debian10
 
 WORKDIR /fizzbuzz
 
